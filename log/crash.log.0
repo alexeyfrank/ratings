@@ -1,0 +1,607 @@
+2014-11-17 11:35:45 =ERROR REPORT====
+Error in process <0.176.0> with exit value: {{nocatch,[{reason,{error,{invalid_ejson,{"user1",300}}}},{mfa,{rating_handler,display,2}},{stacktrace,[{jiffy,encode,2,[{file,"src/jiffy.erl"},{line,41}]},{rating_handler,display,2,[{file,"src/handlers/rating_handler.erl"},{... 
+
+2014-11-17 11:35:45 =ERROR REPORT====
+Ranch listener http_listener had connection process started with cowboy_protocol:start_link/4 at <0.176.0> exit with reason: {{nocatch,[{reason,{error,{invalid_ejson,{"user1",300}}}},{mfa,{rating_handler,display,2}},{stacktrace,[{jiffy,encode,2,[{file,"src/jiffy.erl"},{line,41}]},{rating_handler,display,2,[{file,"src/handlers/rating_handler.erl"},{line,28}]},{cowboy_rest,call,3,[{file,"src/cowboy_rest.erl"},{line,952}]},{cowboy_rest,set_resp_body,2,[{file,"src/cowboy_rest.erl"},{line,834}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,428}]}]},{req,[{socket,#Port<0.4666>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.176.0>},{method,<<"GET">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},50718}},{host,<<"127.0.0.1">>},{host_info,undefined},{port,8008},{path,<<"/api/ratings/weekly">>},{path_info,undefined},{qs,<<>>},{bindings,[{type,<<"weekly">>}]},{headers,[{<<"user-agent">>,<<"curl/7.37.1">>},{<<"host">>,<<"127.0.0.1:8008">>},{<<"accept">>,<<"*/*">>},{<<"content-type">>,<<"application/json">>}]},{meta,[{media_type,{<<"application">>,<<"json">>,[]}},{charset,undefined}]},{body_state,waiting},{buffer,<<>>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[{<<"content-type">>,[<<"application">>,<<"/">>,<<"json">>,<<>>]}]},{resp_body,<<>>},{onresponse,undefined}]},{state,[]}]},[{cowboy_rest,set_resp_body,2,[{file,"src/cowboy_rest.erl"},{line,834}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,428}]}]}
+2014-11-17 12:19:26 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:18: Warning: function get_rating_server/1 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:19: Warning: function reg_rating_server/1 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:21: Warning: function get_rating_stat_server/1 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:22: Warning: function reg_rating_stat_server/1 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:0: Recompiled with 1 warnings
+2014-11-17 12:22:20 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:20: Warning: function get_rating_server/1 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:21: Warning: function reg_rating_server/1 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:23: Warning: function get_rating_stat_server/1 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:24: Warning: function reg_rating_stat_server/1 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:0: Recompiled with 1 warnings
+2014-11-17 12:22:41 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:20: Warning: function get_rating_server/1 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:21: Warning: function reg_rating_server/1 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:25: Warning: function get_rating_stat_server/1 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:26: Warning: function reg_rating_stat_server/1 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:0: Recompiled with 1 warnings
+2014-11-17 12:22:56 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:20: Warning: function get_rating_server/1 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:21: Warning: function reg_rating_server/1 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:25: Warning: function get_rating_stat_server/1 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:26: Warning: function reg_rating_stat_server/1 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:0: Recompiled with 1 warnings
+2014-11-17 12:23:26 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:20: Warning: function get_rating_server/0 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:21: Warning: function get_rating_server/1 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:22: Warning: function reg_rating_server/1 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:26: Warning: function get_rating_stat_server/0 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:27: Warning: function get_rating_stat_server/1 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:28: Warning: function reg_rating_stat_server/1 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:0: Recompiled with 1 warnings
+2014-11-17 12:30:54 =CRASH REPORT====
+  crasher:
+    initial call: ratings_server:init/1
+    pid: <0.115.0>
+    registered_name: []
+    exception exit: {{badarg,[{gproc,add_local_name,[{rating_server}],[{file,"src/gproc.erl"},{line,196}]},{ratings_manager,reg_rating_server,1,[{file,"src/ratings_manager.erl"},{line,26}]},{ratings_server,init,1,[{file,"src/ratings_server.erl"},{line,15}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,306}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,330}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.102.0>]
+    messages: []
+    links: [<0.111.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 135
+  neighbours:
+2014-11-17 13:02:55 =ERROR REPORT====
+Error in process <0.140.0> with exit value: {[{reason,function_clause},{mfa,{user_handler,add_user_score,2}},{stacktrace,[{gen_server,cast,[[<0.116.0>,<0.112.0>,<0.114.0>],{set_user_score,{<<5 bytes>>,100}}],[{file,"gen_server.erl"},{line,196}]},{user_handler,add_user_score,2,[{file,"/Users/alexeyfrank... 
+
+2014-11-17 13:02:55 =ERROR REPORT====
+Ranch listener http_listener had connection process started with cowboy_protocol:start_link/4 at <0.140.0> exit with reason: {[{reason,function_clause},{mfa,{user_handler,add_user_score,2}},{stacktrace,[{gen_server,cast,[[<0.116.0>,<0.112.0>,<0.114.0>],{set_user_score,{<<"user1">>,100}}],[{file,"gen_server.erl"},{line,196}]},{user_handler,add_user_score,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/handlers/user_handler.erl"},{line,32}]},{cowboy_rest,call,3,[{file,"src/cowboy_rest.erl"},{line,952}]},{cowboy_rest,process_content_type,3,[{file,"src/cowboy_rest.erl"},{line,753}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,428}]}]},{req,[{socket,#Port<0.4572>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.140.0>},{method,<<"PUT">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},53723}},{host,<<"127.0.0.1">>},{host_info,undefined},{port,8008},{path,<<"/api/users/user1/100">>},{path_info,undefined},{qs,<<>>},{bindings,[{score,<<"100">>},{user_id,<<"user1">>}]},{headers,[{<<"user-agent">>,<<"curl/7.37.1">>},{<<"host">>,<<"127.0.0.1:8008">>},{<<"accept">>,<<"*/*">>},{<<"content-type">>,<<"application/json">>}]},{meta,[{media_type,{<<"application">>,<<"json">>,[]}},{charset,undefined}]},{body_state,waiting},{buffer,<<>>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[{<<"content-type">>,[<<"application">>,<<"/">>,<<"json">>,<<>>]}]},{resp_body,<<>>},{onresponse,undefined}]},{state,[]}],[{cowboy_rest,process_content_type,3,[{file,"src/cowboy_rest.erl"},{line,753}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,428}]}]}
+2014-11-17 13:04:22 =ERROR REPORT====
+Error in process <0.122.0> with exit value: {[{reason,function_clause},{mfa,{user_handler,add_user_score,2}},{stacktrace,[{gen_server,cast,[[<0.116.0>,<0.112.0>,<0.114.0>],{set_user_score,{<<5 bytes>>,100}}],[{file,"gen_server.erl"},{line,196}]},{user_handler,add_user_score,2,[{file,"/Users/alexeyfrank... 
+
+2014-11-17 13:04:22 =ERROR REPORT====
+Ranch listener http_listener had connection process started with cowboy_protocol:start_link/4 at <0.122.0> exit with reason: {[{reason,function_clause},{mfa,{user_handler,add_user_score,2}},{stacktrace,[{gen_server,cast,[[<0.116.0>,<0.112.0>,<0.114.0>],{set_user_score,{<<"user1">>,100}}],[{file,"gen_server.erl"},{line,196}]},{user_handler,add_user_score,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/handlers/user_handler.erl"},{line,32}]},{cowboy_rest,call,3,[{file,"src/cowboy_rest.erl"},{line,952}]},{cowboy_rest,process_content_type,3,[{file,"src/cowboy_rest.erl"},{line,753}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,428}]}]},{req,[{socket,#Port<0.4572>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.122.0>},{method,<<"PUT">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},53754}},{host,<<"127.0.0.1">>},{host_info,undefined},{port,8008},{path,<<"/api/users/user1/100">>},{path_info,undefined},{qs,<<>>},{bindings,[{score,<<"100">>},{user_id,<<"user1">>}]},{headers,[{<<"user-agent">>,<<"curl/7.37.1">>},{<<"host">>,<<"127.0.0.1:8008">>},{<<"accept">>,<<"*/*">>},{<<"content-type">>,<<"application/json">>}]},{meta,[{media_type,{<<"application">>,<<"json">>,[]}},{charset,undefined}]},{body_state,waiting},{buffer,<<>>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[{<<"content-type">>,[<<"application">>,<<"/">>,<<"json">>,<<>>]}]},{resp_body,<<>>},{onresponse,undefined}]},{state,[]}],[{cowboy_rest,process_content_type,3,[{file,"src/cowboy_rest.erl"},{line,753}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,428}]}]}
+2014-11-17 13:05:45 =ERROR REPORT====
+Ranch listener http_listener had connection process started with cowboy_protocol:start_link/4 at <0.122.0> exit with reason: {[{reason,function_clause},{mfa,{user_handler,add_user_score,2}},{stacktrace,[{gen_server,cast,[[<0.116.0>,<0.112.0>,<0.114.0>],{set_user_score,{<<"user1">>,100}}],[{file,"gen_server.erl"},{line,196}]},{user_handler,add_user_score,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/handlers/user_handler.erl"},{line,32}]},{cowboy_rest,call,3,[{file,"src/cowboy_rest.erl"},{line,952}]},{cowboy_rest,process_content_type,3,[{file,"src/cowboy_rest.erl"},{line,753}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,428}]}]},{req,[{socket,#Port<0.4572>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.122.0>},{method,<<"PUT">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},53810}},{host,<<"127.0.0.1">>},{host_info,undefined},{port,8008},{path,<<"/api/users/user1/100">>},{path_info,undefined},{qs,<<>>},{bindings,[{score,<<"100">>},{user_id,<<"user1">>}]},{headers,[{<<"user-agent">>,<<"curl/7.37.1">>},{<<"host">>,<<"127.0.0.1:8008">>},{<<"accept">>,<<"*/*">>},{<<"content-type">>,<<"application/json">>}]},{meta,[{media_type,{<<"application">>,<<"json">>,[]}},{charset,undefined}]},{body_state,waiting},{buffer,<<>>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[{<<"content-type">>,[<<"application">>,<<"/">>,<<"json">>,<<>>]}]},{resp_body,<<>>},{onresponse,undefined}]},{state,[]}],[{cowboy_rest,process_content_type,3,[{file,"src/cowboy_rest.erl"},{line,753}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,428}]}]}
+2014-11-17 13:05:45 =ERROR REPORT====
+Error in process <0.122.0> with exit value: {[{reason,function_clause},{mfa,{user_handler,add_user_score,2}},{stacktrace,[{gen_server,cast,[[<0.116.0>,<0.112.0>,<0.114.0>],{set_user_score,{<<5 bytes>>,100}}],[{file,"gen_server.erl"},{line,196}]},{user_handler,add_user_score,2,[{file,"/Users/alexeyfrank... 
+
+2014-11-17 13:08:00 =ERROR REPORT====
+Ranch listener http_listener had connection process started with cowboy_protocol:start_link/4 at <0.122.0> exit with reason: {[{reason,function_clause},{mfa,{user_handler,add_user_score,2}},{stacktrace,[{gen_server,cast,[[<0.116.0>,<0.112.0>,<0.114.0>],{set_user_score,{<<"user1">>,100}}],[{file,"gen_server.erl"},{line,196}]},{user_handler,add_user_score,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/handlers/user_handler.erl"},{line,32}]},{cowboy_rest,call,3,[{file,"src/cowboy_rest.erl"},{line,952}]},{cowboy_rest,process_content_type,3,[{file,"src/cowboy_rest.erl"},{line,753}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,428}]}]},{req,[{socket,#Port<0.4572>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.122.0>},{method,<<"PUT">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},53905}},{host,<<"127.0.0.1">>},{host_info,undefined},{port,8008},{path,<<"/api/users/user1/100">>},{path_info,undefined},{qs,<<>>},{bindings,[{score,<<"100">>},{user_id,<<"user1">>}]},{headers,[{<<"user-agent">>,<<"curl/7.37.1">>},{<<"host">>,<<"127.0.0.1:8008">>},{<<"accept">>,<<"*/*">>},{<<"content-type">>,<<"application/json">>}]},{meta,[{media_type,{<<"application">>,<<"json">>,[]}},{charset,undefined}]},{body_state,waiting},{buffer,<<>>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[{<<"content-type">>,[<<"application">>,<<"/">>,<<"json">>,<<>>]}]},{resp_body,<<>>},{onresponse,undefined}]},{state,[]}],[{cowboy_rest,process_content_type,3,[{file,"src/cowboy_rest.erl"},{line,753}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,428}]}]}
+2014-11-17 13:08:00 =ERROR REPORT====
+Error in process <0.122.0> with exit value: {[{reason,function_clause},{mfa,{user_handler,add_user_score,2}},{stacktrace,[{gen_server,cast,[[<0.116.0>,<0.112.0>,<0.114.0>],{set_user_score,{<<5 bytes>>,100}}],[{file,"gen_server.erl"},{line,196}]},{user_handler,add_user_score,2,[{file,"/Users/alexeyfrank... 
+
+2014-11-17 13:12:00 =ERROR REPORT====
+Ranch listener http_listener had connection process started with cowboy_protocol:start_link/4 at <0.122.0> exit with reason: {[{reason,function_clause},{mfa,{user_handler,add_user_score,2}},{stacktrace,[{lists,foreach,[#Fun<ratings_manager.2.69992472>,{set_user_score,{<<"user1">>,100}}],[{file,"lists.erl"},{line,1335}]},{lists,foreach,2,[{file,"lists.erl"},{line,1336}]},{user_handler,add_user_score,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/handlers/user_handler.erl"},{line,32}]},{cowboy_rest,call,3,[{file,"src/cowboy_rest.erl"},{line,952}]},{cowboy_rest,process_content_type,3,[{file,"src/cowboy_rest.erl"},{line,753}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,428}]}]},{req,[{socket,#Port<0.4572>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.122.0>},{method,<<"PUT">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},54082}},{host,<<"127.0.0.1">>},{host_info,undefined},{port,8008},{path,<<"/api/users/user1/100">>},{path_info,undefined},{qs,<<>>},{bindings,[{score,<<"100">>},{user_id,<<"user1">>}]},{headers,[{<<"user-agent">>,<<"curl/7.37.1">>},{<<"host">>,<<"127.0.0.1:8008">>},{<<"accept">>,<<"*/*">>},{<<"content-type">>,<<"application/json">>}]},{meta,[{media_type,{<<"application">>,<<"json">>,[]}},{charset,undefined}]},{body_state,waiting},{buffer,<<>>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[{<<"content-type">>,[<<"application">>,<<"/">>,<<"json">>,<<>>]}]},{resp_body,<<>>},{onresponse,undefined}]},{state,[]}],[{cowboy_rest,process_content_type,3,[{file,"src/cowboy_rest.erl"},{line,753}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,428}]}]}
+2014-11-17 13:12:00 =ERROR REPORT====
+Error in process <0.122.0> with exit value: {[{reason,function_clause},{mfa,{user_handler,add_user_score,2}},{stacktrace,[{lists,foreach,[#Fun<ratings_manager.2.69992472>,{set_user_score,{<<5 bytes>>,100}}],[{file,"lists.erl"},{line,1335}]},{lists,foreach,2,[{file,"lists.erl"},{line,1336}]},{user_handler,add_user_score... 
+
+2014-11-17 13:14:34 =ERROR REPORT====
+Error in process <0.123.0> with exit value: {[{reason,function_clause},{mfa,{user_handler,add_user_score,2}},{stacktrace,[{lists,foreach,[#Fun<ratings_manager.2.74117379>,<0.116.0>],[{file,"lists.erl"},{line,1335}]},{lists,foreach,2,[{file,"lists.erl"},{line,1336}]},{user_handler,add_user_score,2,[{file,"/Users... 
+
+2014-11-17 13:14:34 =ERROR REPORT====
+Ranch listener http_listener had connection process started with cowboy_protocol:start_link/4 at <0.123.0> exit with reason: {[{reason,function_clause},{mfa,{user_handler,add_user_score,2}},{stacktrace,[{lists,foreach,[#Fun<ratings_manager.2.74117379>,<0.116.0>],[{file,"lists.erl"},{line,1335}]},{lists,foreach,2,[{file,"lists.erl"},{line,1336}]},{user_handler,add_user_score,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/handlers/user_handler.erl"},{line,32}]},{cowboy_rest,call,3,[{file,"src/cowboy_rest.erl"},{line,952}]},{cowboy_rest,process_content_type,3,[{file,"src/cowboy_rest.erl"},{line,753}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,428}]}]},{req,[{socket,#Port<0.4572>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.123.0>},{method,<<"PUT">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},54140}},{host,<<"127.0.0.1">>},{host_info,undefined},{port,8008},{path,<<"/api/users/user1/100">>},{path_info,undefined},{qs,<<>>},{bindings,[{score,<<"100">>},{user_id,<<"user1">>}]},{headers,[{<<"user-agent">>,<<"curl/7.37.1">>},{<<"host">>,<<"127.0.0.1:8008">>},{<<"accept">>,<<"*/*">>},{<<"content-type">>,<<"application/json">>}]},{meta,[{media_type,{<<"application">>,<<"json">>,[]}},{charset,undefined}]},{body_state,waiting},{buffer,<<>>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[{<<"content-type">>,[<<"application">>,<<"/">>,<<"json">>,<<>>]}]},{resp_body,<<>>},{onresponse,undefined}]},{state,[]}],[{cowboy_rest,process_content_type,3,[{file,"src/cowboy_rest.erl"},{line,753}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,428}]}]}
+2014-11-17 13:16:35 =ERROR REPORT====
+** Generic server <0.116.0> terminating 
+** Last message in was {'$gen_cast',{set_user_score,{<<"user1">>,100}}}
+** When Server state == #{threshold => {ok,20},type => daily,users => {dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}}}
+** Reason for termination == 
+** {noproc,{gen_server,call,[undefined,{get_requests_count}]}}
+2014-11-17 13:16:35 =CRASH REPORT====
+  crasher:
+    initial call: ratings_server:init/1
+    pid: <0.116.0>
+    registered_name: []
+    exception exit: {{noproc,{gen_server,call,[undefined,{get_requests_count}]}},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.102.0>]
+    messages: []
+    links: [<0.111.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 205
+  neighbours:
+2014-11-17 13:16:35 =ERROR REPORT====
+** Generic server <0.114.0> terminating 
+** Last message in was {'$gen_cast',{set_user_score,{<<"user1">>,100}}}
+** When Server state == #{threshold => {ok,20},type => weekly,users => {dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}}}
+** Reason for termination == 
+** {noproc,{gen_server,call,[undefined,{get_requests_count}]}}
+2014-11-17 13:16:35 =CRASH REPORT====
+  crasher:
+    initial call: ratings_server:init/1
+    pid: <0.114.0>
+    registered_name: []
+    exception exit: {{noproc,{gen_server,call,[undefined,{get_requests_count}]}},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.102.0>]
+    messages: []
+    links: [<0.111.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 205
+  neighbours:
+2014-11-17 13:16:35 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {noproc,{gen_server,call,[undefined,{get_requests_count}]}}
+     Offender:   [{pid,<0.116.0>},{name,daily_ratings_server},{mfargs,{ratings_server,start_link,[#{threshold => {ok,20},type => daily}]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-17 13:16:35 =ERROR REPORT====
+** Generic server <0.112.0> terminating 
+** Last message in was {'$gen_cast',{set_user_score,{<<"user1">>,100}}}
+** When Server state == #{threshold => {ok,20},type => total,users => {dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}}}
+** Reason for termination == 
+** {noproc,{gen_server,call,[undefined,{get_requests_count}]}}
+2014-11-17 13:16:35 =CRASH REPORT====
+  crasher:
+    initial call: ratings_server:init/1
+    pid: <0.112.0>
+    registered_name: []
+    exception exit: {{noproc,{gen_server,call,[undefined,{get_requests_count}]}},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.102.0>]
+    messages: []
+    links: [<0.111.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 213
+  neighbours:
+2014-11-17 13:16:35 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {noproc,{gen_server,call,[undefined,{get_requests_count}]}}
+     Offender:   [{pid,<0.114.0>},{name,weekly_ratings_server},{mfargs,{ratings_server,start_link,[#{threshold => {ok,20},type => weekly}]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-17 13:16:35 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {noproc,{gen_server,call,[undefined,{get_requests_count}]}}
+     Offender:   [{pid,<0.112.0>},{name,total_ratings_server},{mfargs,{ratings_server,start_link,[#{threshold => {ok,20},type => total}]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-17 13:21:37 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl:36: Warning: variable 'User' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl:39: Warning: variable 'User' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl:0: Recompiled with 1 warnings
+2014-11-17 13:23:32 =ERROR REPORT====
+** Generic server <0.117.0> terminating 
+** Last message in was {'$gen_cast',{on_new_request}}
+** When Server state == #{requests_counter => {mavg,300,1416219795,1416219795,0,0.0,{ecnt,0,4720636,[],0,3}},type => daily}
+** Reason for termination == 
+** {'function not exported',[{jn_mavg,bump_mavg,[{mavg,300,1416219795,1416219795,0,0.0,{ecnt,0,4720636,[],0,3}}],[]},{ratings_stat_server,handle_cast,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,34}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-11-17 13:23:32 =ERROR REPORT====
+** Generic server <0.115.0> terminating 
+** Last message in was {'$gen_cast',{on_new_request}}
+** When Server state == #{requests_counter => {mavg,300,1416219795,1416219795,0,0.0,{ecnt,0,4720636,[],0,3}},type => weekly}
+** Reason for termination == 
+** {'function not exported',[{jn_mavg,bump_mavg,[{mavg,300,1416219795,1416219795,0,0.0,{ecnt,0,4720636,[],0,3}}],[]},{ratings_stat_server,handle_cast,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,34}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-11-17 13:23:32 =CRASH REPORT====
+  crasher:
+    initial call: ratings_stat_server:init/1
+    pid: <0.117.0>
+    registered_name: []
+    exception exit: {{undef,[{jn_mavg,bump_mavg,[{mavg,300,1416219795,1416219795,0,0.0,{ecnt,0,4720636,[],0,3}}],[]},{ratings_stat_server,handle_cast,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,34}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.102.0>]
+    messages: [{'$gen_cast',{on_user_not_join_in_rating}}]
+    links: [<0.111.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 200
+  neighbours:
+2014-11-17 13:23:32 =CRASH REPORT====
+  crasher:
+    initial call: ratings_stat_server:init/1
+    pid: <0.115.0>
+    registered_name: []
+    exception exit: {{undef,[{jn_mavg,bump_mavg,[{mavg,300,1416219795,1416219795,0,0.0,{ecnt,0,4720636,[],0,3}}],[]},{ratings_stat_server,handle_cast,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,34}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.102.0>]
+    messages: [{'$gen_cast',{on_user_not_join_in_rating}}]
+    links: [<0.111.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 200
+  neighbours:
+2014-11-17 13:23:32 =ERROR REPORT====
+** Generic server <0.113.0> terminating 
+** Last message in was {'$gen_cast',{on_new_request}}
+** When Server state == #{requests_counter => {mavg,300,1416219795,1416219795,0,0.0,{ecnt,0,4720636,[],0,3}},type => total}
+** Reason for termination == 
+** {'function not exported',[{jn_mavg,bump_mavg,[{mavg,300,1416219795,1416219795,0,0.0,{ecnt,0,4720636,[],0,3}}],[]},{ratings_stat_server,handle_cast,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,34}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-11-17 13:23:32 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {undef,[{jn_mavg,bump_mavg,[{mavg,300,1416219795,1416219795,0,0.0,{ecnt,0,4720636,[],0,3}}],[]},{ratings_stat_server,handle_cast,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,34}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.117.0>},{name,daily_ratings_stat_server},{mfargs,{ratings_stat_server,start_link,[#{type => daily}]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-17 13:23:32 =CRASH REPORT====
+  crasher:
+    initial call: ratings_stat_server:init/1
+    pid: <0.113.0>
+    registered_name: []
+    exception exit: {{undef,[{jn_mavg,bump_mavg,[{mavg,300,1416219795,1416219795,0,0.0,{ecnt,0,4720636,[],0,3}}],[]},{ratings_stat_server,handle_cast,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,34}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.102.0>]
+    messages: [{'$gen_cast',{on_user_not_join_in_rating}}]
+    links: [<0.111.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 220
+  neighbours:
+2014-11-17 13:23:32 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {undef,[{jn_mavg,bump_mavg,[{mavg,300,1416219795,1416219795,0,0.0,{ecnt,0,4720636,[],0,3}}],[]},{ratings_stat_server,handle_cast,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,34}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.115.0>},{name,weekly_ratings_stat_server},{mfargs,{ratings_stat_server,start_link,[#{type => weekly}]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-17 13:23:32 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {undef,[{jn_mavg,bump_mavg,[{mavg,300,1416219795,1416219795,0,0.0,{ecnt,0,4720636,[],0,3}}],[]},{ratings_stat_server,handle_cast,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,34}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.113.0>},{name,total_ratings_stat_server},{mfargs,{ratings_stat_server,start_link,[#{type => total}]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-17 13:24:14 =ERROR REPORT====
+** Generic server <0.117.0> terminating 
+** Last message in was {'$gen_cast',{on_user_not_join_in_rating}}
+** When Server state == #{requests_counter => {mavg,300,1416219850,1416219854,1,0.0,{ecnt,1,4720636,[],0,3}},type => daily}
+** Reason for termination == 
+** {function_clause,[{ratings_stat_server,handle_cast,[{on_user_not_join_in_rating},#{requests_counter => {mavg,300,1416219850,1416219854,1,0.0,{ecnt,1,4720636,[],0,3}},type => daily}],[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,33}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-11-17 13:24:14 =CRASH REPORT====
+  crasher:
+    initial call: ratings_stat_server:init/1
+    pid: <0.117.0>
+    registered_name: []
+    exception exit: {{function_clause,[{ratings_stat_server,handle_cast,[{on_user_not_join_in_rating},#{requests_counter => {mavg,300,1416219850,1416219854,1,0.0,{ecnt,1,4720636,[],0,3}},type => daily}],[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,33}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.102.0>]
+    messages: []
+    links: [<0.111.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 189
+  neighbours:
+2014-11-17 13:24:14 =ERROR REPORT====
+** Generic server <0.113.0> terminating 
+** Last message in was {'$gen_cast',{on_user_not_join_in_rating}}
+** When Server state == #{requests_counter => {mavg,300,1416219850,1416219854,1,0.0,{ecnt,1,4720636,[],0,3}},type => total}
+** Reason for termination == 
+** {function_clause,[{ratings_stat_server,handle_cast,[{on_user_not_join_in_rating},#{requests_counter => {mavg,300,1416219850,1416219854,1,0.0,{ecnt,1,4720636,[],0,3}},type => total}],[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,33}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-11-17 13:24:14 =CRASH REPORT====
+  crasher:
+    initial call: ratings_stat_server:init/1
+    pid: <0.113.0>
+    registered_name: []
+    exception exit: {{function_clause,[{ratings_stat_server,handle_cast,[{on_user_not_join_in_rating},#{requests_counter => {mavg,300,1416219850,1416219854,1,0.0,{ecnt,1,4720636,[],0,3}},type => total}],[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,33}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.102.0>]
+    messages: []
+    links: [<0.111.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 201
+  neighbours:
+2014-11-17 13:24:14 =ERROR REPORT====
+** Generic server <0.115.0> terminating 
+** Last message in was {'$gen_cast',{on_user_not_join_in_rating}}
+** When Server state == #{requests_counter => {mavg,300,1416219850,1416219854,1,0.0,{ecnt,1,4720636,[],0,3}},type => weekly}
+** Reason for termination == 
+** {function_clause,[{ratings_stat_server,handle_cast,[{on_user_not_join_in_rating},#{requests_counter => {mavg,300,1416219850,1416219854,1,0.0,{ecnt,1,4720636,[],0,3}},type => weekly}],[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,33}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-11-17 13:24:14 =CRASH REPORT====
+  crasher:
+    initial call: ratings_stat_server:init/1
+    pid: <0.115.0>
+    registered_name: []
+    exception exit: {{function_clause,[{ratings_stat_server,handle_cast,[{on_user_not_join_in_rating},#{requests_counter => {mavg,300,1416219850,1416219854,1,0.0,{ecnt,1,4720636,[],0,3}},type => weekly}],[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,33}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.102.0>]
+    messages: []
+    links: [<0.111.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 201
+  neighbours:
+2014-11-17 13:24:14 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{ratings_stat_server,handle_cast,[{on_user_not_join_in_rating},#{requests_counter => {mavg,300,1416219850,1416219854,1,0.0,{ecnt,1,4720636,[],0,3}},type => daily}],[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,33}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.117.0>},{name,daily_ratings_stat_server},{mfargs,{ratings_stat_server,start_link,[#{type => daily}]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-17 13:24:14 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{ratings_stat_server,handle_cast,[{on_user_not_join_in_rating},#{requests_counter => {mavg,300,1416219850,1416219854,1,0.0,{ecnt,1,4720636,[],0,3}},type => total}],[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,33}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.113.0>},{name,total_ratings_stat_server},{mfargs,{ratings_stat_server,start_link,[#{type => total}]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-17 13:24:14 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{ratings_stat_server,handle_cast,[{on_user_not_join_in_rating},#{requests_counter => {mavg,300,1416219850,1416219854,1,0.0,{ecnt,1,4720636,[],0,3}},type => weekly}],[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,33}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.115.0>},{name,weekly_ratings_stat_server},{mfargs,{ratings_stat_server,start_link,[#{type => weekly}]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-17 13:25:06 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:19: Warning: variable 'Users' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:41: Warning: variable 'State' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:53: Warning: variable 'State' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:0: Recompiled with 1 warnings
+2014-11-17 13:25:10 =ERROR REPORT====
+** Generic server <0.124.0> terminating 
+** Last message in was {'$gen_cast',{on_user_not_join_in_rating,{<<"user1">>,100}}}
+** When Server state == #{requests_counter => {mavg,300,1416219854,1416219910,1,0.0,{ecnt,1,4720637,[],0,3}},type => daily}
+** Reason for termination == 
+** {function_clause,[{jn_mavg,bump_mavg,[{mavg,300,1416219854,1416219910,1,0.0,{ecnt,1,4720637,[],0,3}},{<<"user1">>,100},1416219910],[{file,"src/jn_mavg.erl"},{line,97}]},{ratings_stat_server,handle_cast,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,40}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-11-17 13:25:10 =CRASH REPORT====
+  crasher:
+    initial call: ratings_stat_server:init/1
+    pid: <0.124.0>
+    registered_name: []
+    exception exit: {{function_clause,[{jn_mavg,bump_mavg,[{mavg,300,1416219854,1416219910,1,0.0,{ecnt,1,4720637,[],0,3}},{<<"user1">>,100},1416219910],[{file,"src/jn_mavg.erl"},{line,97}]},{ratings_stat_server,handle_cast,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,40}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.102.0>]
+    messages: []
+    links: [<0.111.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 213
+  neighbours:
+2014-11-17 13:25:10 =ERROR REPORT====
+** Generic server <0.125.0> terminating 
+** Last message in was {'$gen_cast',{on_user_not_join_in_rating,{<<"user1">>,100}}}
+** When Server state == #{requests_counter => {mavg,300,1416219854,1416219910,1,0.0,{ecnt,1,4720637,[],0,3}},type => total}
+** Reason for termination == 
+** {function_clause,[{jn_mavg,bump_mavg,[{mavg,300,1416219854,1416219910,1,0.0,{ecnt,1,4720637,[],0,3}},{<<"user1">>,100},1416219910],[{file,"src/jn_mavg.erl"},{line,97}]},{ratings_stat_server,handle_cast,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,40}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-11-17 13:25:10 =CRASH REPORT====
+  crasher:
+    initial call: ratings_stat_server:init/1
+    pid: <0.125.0>
+    registered_name: []
+    exception exit: {{function_clause,[{jn_mavg,bump_mavg,[{mavg,300,1416219854,1416219910,1,0.0,{ecnt,1,4720637,[],0,3}},{<<"user1">>,100},1416219910],[{file,"src/jn_mavg.erl"},{line,97}]},{ratings_stat_server,handle_cast,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,40}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.102.0>]
+    messages: []
+    links: [<0.111.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 217
+  neighbours:
+2014-11-17 13:25:10 =ERROR REPORT====
+** Generic server <0.126.0> terminating 
+** Last message in was {'$gen_cast',{on_user_not_join_in_rating,{<<"user1">>,100}}}
+** When Server state == #{requests_counter => {mavg,300,1416219854,1416219910,1,0.0,{ecnt,1,4720637,[],0,3}},type => weekly}
+** Reason for termination == 
+** {function_clause,[{jn_mavg,bump_mavg,[{mavg,300,1416219854,1416219910,1,0.0,{ecnt,1,4720637,[],0,3}},{<<"user1">>,100},1416219910],[{file,"src/jn_mavg.erl"},{line,97}]},{ratings_stat_server,handle_cast,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,40}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-11-17 13:25:10 =CRASH REPORT====
+  crasher:
+    initial call: ratings_stat_server:init/1
+    pid: <0.126.0>
+    registered_name: []
+    exception exit: {{function_clause,[{jn_mavg,bump_mavg,[{mavg,300,1416219854,1416219910,1,0.0,{ecnt,1,4720637,[],0,3}},{<<"user1">>,100},1416219910],[{file,"src/jn_mavg.erl"},{line,97}]},{ratings_stat_server,handle_cast,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,40}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.102.0>]
+    messages: []
+    links: [<0.111.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 225
+  neighbours:
+2014-11-17 13:25:10 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{jn_mavg,bump_mavg,[{mavg,300,1416219854,1416219910,1,0.0,{ecnt,1,4720637,[],0,3}},{<<"user1">>,100},1416219910],[{file,"src/jn_mavg.erl"},{line,97}]},{ratings_stat_server,handle_cast,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,40}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.124.0>},{name,daily_ratings_stat_server},{mfargs,{ratings_stat_server,start_link,[#{type => daily}]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-17 13:25:10 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{jn_mavg,bump_mavg,[{mavg,300,1416219854,1416219910,1,0.0,{ecnt,1,4720637,[],0,3}},{<<"user1">>,100},1416219910],[{file,"src/jn_mavg.erl"},{line,97}]},{ratings_stat_server,handle_cast,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,40}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.125.0>},{name,total_ratings_stat_server},{mfargs,{ratings_stat_server,start_link,[#{type => total}]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-17 13:25:10 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{jn_mavg,bump_mavg,[{mavg,300,1416219854,1416219910,1,0.0,{ecnt,1,4720637,[],0,3}},{<<"user1">>,100},1416219910],[{file,"src/jn_mavg.erl"},{line,97}]},{ratings_stat_server,handle_cast,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl"},{line,40}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.126.0>},{name,weekly_ratings_stat_server},{mfargs,{ratings_stat_server,start_link,[#{type => weekly}]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-17 13:26:21 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:19: Warning: variable 'Users' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:41: Warning: variable 'State' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:53: Warning: variable 'State' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:0: Recompiled with 1 warnings
+2014-11-17 13:26:28 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl:36: Warning: variable 'User' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl:39: Warning: variable 'User' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl:0: Recompiled with 1 warnings
+2014-11-17 13:26:38 =ERROR REPORT====
+** Generic server <0.114.0> terminating 
+** Last message in was {get_rating}
+** When Server state == #{threshold => {ok,20},type => weekly,users => {dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}}}
+** Reason for termination == 
+** {bad_return_value,{reply,[]}}
+2014-11-17 13:26:38 =CRASH REPORT====
+  crasher:
+    initial call: ratings_server:init/1
+    pid: <0.114.0>
+    registered_name: []
+    exception exit: {{bad_return_value,{reply,[]}},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.102.0>]
+    messages: []
+    links: [<0.111.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 427
+  neighbours:
+2014-11-17 13:26:38 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{reply,[]}}
+     Offender:   [{pid,<0.114.0>},{name,weekly_ratings_server},{mfargs,{ratings_server,start_link,[#{threshold => {ok,20},type => weekly}]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-17 13:26:38 =ERROR REPORT====
+Ranch listener http_listener had connection process started with cowboy_protocol:start_link/4 at <0.687.0> exit with reason: [{reason,{{bad_return_value,{reply,[]}},{gen_server,call,[<0.114.0>,{get_rating}]}}},{mfa,{rating_handler,display,2}},{stacktrace,[{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{rating_handler,display,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/handlers/rating_handler.erl"},{line,25}]},{cowboy_rest,call,3,[{file,"src/cowboy_rest.erl"},{line,952}]},{cowboy_rest,set_resp_body,2,[{file,"src/cowboy_rest.erl"},{line,834}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,428}]}]},{req,[{socket,#Port<0.5240>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.687.0>},{method,<<"GET">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},54337}},{host,<<"127.0.0.1">>},{host_info,undefined},{port,8008},{path,<<"/api/ratings/weekly">>},{path_info,undefined},{qs,<<>>},{bindings,[{type,<<"weekly">>}]},{headers,[{<<"user-agent">>,<<"curl/7.37.1">>},{<<"host">>,<<"127.0.0.1:8008">>},{<<"accept">>,<<"*/*">>},{<<"content-type">>,<<"application/json">>}]},{meta,[{media_type,{<<"application">>,<<"json">>,[]}},{charset,undefined}]},{body_state,waiting},{buffer,<<>>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[{<<"content-type">>,[<<"application">>,<<"/">>,<<"json">>,<<>>]}]},{resp_body,<<>>},{onresponse,undefined}]},{state,[]}]
+2014-11-17 13:27:43 =ERROR REPORT====
+** Generic server <0.688.0> terminating 
+** Last message in was {get_rating}
+** When Server state == #{threshold => {ok,20},type => weekly,users => {dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}}}
+** Reason for termination == 
+** {bad_return_value,{reply,[]}}
+2014-11-17 13:27:43 =CRASH REPORT====
+  crasher:
+    initial call: ratings_server:init/1
+    pid: <0.688.0>
+    registered_name: []
+    exception exit: {{bad_return_value,{reply,[]}},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.102.0>]
+    messages: []
+    links: [<0.111.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 355
+  neighbours:
+2014-11-17 13:27:43 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{reply,[]}}
+     Offender:   [{pid,<0.688.0>},{name,weekly_ratings_server},{mfargs,{ratings_server,start_link,[#{threshold => {ok,20},type => weekly}]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-17 13:36:15 =ERROR REPORT====
+** Generic server <0.114.0> terminating 
+** Last message in was {get_rating}
+** When Server state == #{threshold => 20,type => weekly,users => {dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[[<<"user1">>|100]],[],[],[],[],[],[],[],[]}}}}
+** Reason for termination == 
+** {bad_return_value,{reply,[{<<"user1">>,100}]}}
+2014-11-17 13:36:15 =CRASH REPORT====
+  crasher:
+    initial call: ratings_server:init/1
+    pid: <0.114.0>
+    registered_name: []
+    exception exit: {{bad_return_value,{reply,[{<<"user1">>,100}]}},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.102.0>]
+    messages: []
+    links: [<0.111.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 254
+  neighbours:
+2014-11-17 13:36:15 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {bad_return_value,{reply,[{<<"user1">>,100}]}}
+     Offender:   [{pid,<0.114.0>},{name,weekly_ratings_server},{mfargs,{ratings_server,start_link,[#{threshold => 20,type => weekly}]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-17 13:36:15 =ERROR REPORT====
+Ranch listener http_listener had connection process started with cowboy_protocol:start_link/4 at <0.133.0> exit with reason: [{reason,{{bad_return_value,{reply,[{<<"user1">>,100}]}},{gen_server,call,[<0.114.0>,{get_rating}]}}},{mfa,{rating_handler,display,2}},{stacktrace,[{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{rating_handler,display,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/handlers/rating_handler.erl"},{line,25}]},{cowboy_rest,call,3,[{file,"src/cowboy_rest.erl"},{line,952}]},{cowboy_rest,set_resp_body,2,[{file,"src/cowboy_rest.erl"},{line,834}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,428}]}]},{req,[{socket,#Port<0.4669>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.133.0>},{method,<<"GET">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},54424}},{host,<<"127.0.0.1">>},{host_info,undefined},{port,8008},{path,<<"/api/ratings/weekly">>},{path_info,undefined},{qs,<<>>},{bindings,[{type,<<"weekly">>}]},{headers,[{<<"user-agent">>,<<"curl/7.37.1">>},{<<"host">>,<<"127.0.0.1:8008">>},{<<"accept">>,<<"*/*">>},{<<"content-type">>,<<"application/json">>}]},{meta,[{media_type,{<<"application">>,<<"json">>,[]}},{charset,undefined}]},{body_state,waiting},{buffer,<<>>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[{<<"content-type">>,[<<"application">>,<<"/">>,<<"json">>,<<>>]}]},{resp_body,<<>>},{onresponse,undefined}]},{state,[]}]
+2014-11-17 13:37:12 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:19: Warning: variable 'Users' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:41: Warning: variable 'State' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:53: Warning: variable 'State' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:0: Recompiled with 1 warnings
+2014-11-17 13:37:17 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:19: Warning: variable 'Users' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:41: Warning: variable 'State' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:53: Warning: variable 'State' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:0: Recompiled with 1 warnings
+2014-11-17 14:01:25 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:19: Warning: variable 'Users' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:53: Warning: variable 'State' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:0: Recompiled with 1 warnings
+2014-11-17 14:01:28 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:19: Warning: variable 'Users' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:53: Warning: variable 'State' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:0: Recompiled with 1 warnings
+2014-11-17 14:01:51 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:19: Warning: variable 'Users' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:53: Warning: variable 'State' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:0: Recompiled with 1 warnings
+2014-11-17 14:04:49 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:19: Warning: variable 'Users' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:62: Warning: variable 'State' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:0: Recompiled with 1 warnings
+2014-11-17 14:04:56 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:19: Warning: variable 'Users' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:63: Warning: variable 'State' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:0: Recompiled with 1 warnings
+2014-11-17 14:04:59 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:19: Warning: variable 'Users' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:63: Warning: variable 'State' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:0: Recompiled with 1 warnings
+2014-11-17 14:05:33 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:19: Warning: variable 'Users' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:63: Warning: variable 'State' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:0: Recompiled with 1 warnings
+2014-11-17 14:05:53 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl:33: Warning: variable 'NewVal' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl:33: Warning: variable 'OldVal' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl:36: Warning: variable 'User' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl:39: Warning: variable 'User' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl:0: Recompiled with 1 warnings
+2014-11-17 14:06:34 =ERROR REPORT====
+** Generic server <0.114.0> terminating 
+** Last message in was {get_rating}
+** When Server state == #{threshold => 20,type => weekly,users => {dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[[<<"user1">>|100]],[],[],[],[],[],[],[],[]}}}}
+** Reason for termination == 
+** {function_clause,[{ratings_server,send_statistic_event,[{new_request},#{threshold => 20,type => weekly,users => {dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[[<<"user1">>|100]],[],[],[],[],[],[],[],[]}}}}],[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl"},{line,67}]},{ratings_server,handle_call,3,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl"},{line,20}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-11-17 14:06:34 =CRASH REPORT====
+  crasher:
+    initial call: ratings_server:init/1
+    pid: <0.114.0>
+    registered_name: []
+    exception exit: {{function_clause,[{ratings_server,send_statistic_event,[{new_request},#{threshold => 20,type => weekly,users => {dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[[<<"user1">>|100]],[],[],[],[],[],[],[],[]}}}}],[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl"},{line,67}]},{ratings_server,handle_call,3,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl"},{line,20}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.102.0>]
+    messages: []
+    links: [<0.111.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 245
+  neighbours:
+2014-11-17 14:06:34 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{ratings_server,send_statistic_event,[{new_request},#{threshold => 20,type => weekly,users => {dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[[<<"user1">>|100]],[],[],[],[],[],[],[],[]}}}}],[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl"},{line,67}]},{ratings_server,handle_call,3,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl"},{line,20}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.114.0>},{name,weekly_ratings_server},{mfargs,{ratings_server,start_link,[#{threshold => 20,type => weekly}]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-17 14:06:34 =ERROR REPORT====
+Ranch listener http_listener had connection process started with cowboy_protocol:start_link/4 at <0.241.0> exit with reason: [{reason,{{function_clause,[{ratings_server,send_statistic_event,[{new_request},#{threshold => 20,type => weekly,users => {dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[[<<"user1">>|100]],[],[],[],[],[],[],[],[]}}}}],[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl"},{line,67}]},{ratings_server,handle_call,3,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl"},{line,20}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},{gen_server,call,[<0.114.0>,{get_rating}]}}},{mfa,{rating_handler,display,2}},{stacktrace,[{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{rating_handler,display,2,[{file,"/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/handlers/rating_handler.erl"},{line,25}]},{cowboy_rest,call,3,[{file,"src/cowboy_rest.erl"},{line,952}]},{cowboy_rest,set_resp_body,2,[{file,"src/cowboy_rest.erl"},{line,834}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,428}]}]},{req,[{socket,#Port<0.4748>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.241.0>},{method,<<"GET">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},55290}},{host,<<"127.0.0.1">>},{host_info,undefined},{port,8008},{path,<<"/api/ratings/weekly">>},{path_info,undefined},{qs,<<>>},{bindings,[{type,<<"weekly">>}]},{headers,[{<<"user-agent">>,<<"curl/7.37.1">>},{<<"host">>,<<"127.0.0.1:8008">>},{<<"accept">>,<<"*/*">>},{<<"content-type">>,<<"application/json">>}]},{meta,[{media_type,{<<"application">>,<<"json">>,[]}},{charset,undefined}]},{body_state,waiting},{buffer,<<>>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[{<<"content-type">>,[<<"application">>,<<"/">>,<<"json">>,<<>>]}]},{resp_body,<<>>},{onresponse,undefined}]},{state,[]}]
+2014-11-17 14:06:55 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:19: Warning: variable 'Users' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:62: Warning: variable 'State' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:0: Recompiled with 1 warnings
+2014-11-17 14:07:01 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:19: Warning: variable 'Users' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:60: Warning: variable 'State' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:0: Recompiled with 1 warnings

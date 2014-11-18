@@ -1,0 +1,26 @@
+2014-11-18 11:34:47 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl:33: Warning: variable 'Score' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl:33: Warning: variable 'UserId' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl:36: Warning: variable 'User' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl:39: Warning: variable 'User' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl:0: Recompiled with 1 warnings
+2014-11-18 11:40:15 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl:36: Warning: variable 'Score' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl:36: Warning: variable 'UserId' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl:39: Warning: variable 'User' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl:42: Warning: variable 'User' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl:0: Recompiled with 1 warnings
+2014-11-18 11:56:17 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:14: Warning: function get_user_stat/2 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:0: Recompiled with 1 warnings
+2014-11-18 11:56:21 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:15: Warning: function get_user_stat/2 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_manager.erl:0: Recompiled with 1 warnings
+2014-11-18 12:12:14 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl:36: Warning: variable 'State2' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_stat_server.erl:0: Recompiled with 1 warnings
+2014-11-18 12:14:07 =ERROR REPORT====
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:19: Warning: variable 'Users' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:36: Warning: function get_user_score/2 is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:49: Warning: variable 'State' is unused
+/Users/alexeyfrank/projects/langs/erlang/itech/apps/ratings/src/ratings_server.erl:0: Recompiled with 1 warnings

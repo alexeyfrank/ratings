@@ -1,0 +1,382 @@
+2014-11-13 01:25:06 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    start_error
+     Reason:     {'EXIT',{undef,[{ratings_server,start_link,[#{type => total}],[]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,314}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,297}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,263}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,306}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}}
+     Offender:   [{pid,undefined},{name,ratings_server},{mfargs,{ratings_server,start_link,[#{type => total}]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-13 01:25:06 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.104.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,ratings_server,{'EXIT',{undef,[{ratings_server,start_link,[#{type => total}],[]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,314}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,297}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,263}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,306}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}}}},{ratings_app,start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,133}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [<0.103.0>]
+    messages: [{'EXIT',<0.105.0>,normal}]
+    links: [<0.103.0>,<0.7.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 169
+  neighbours:
+2014-11-13 01:41:16 =ERROR REPORT====
+** Generic server ratings_server terminating 
+** Last message in was {'$gen_cast',{add_score,user1,1}}
+** When Server state == {dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}}
+** Reason for termination == 
+** {function_clause,[{ratings_server,handle_cast,[{add_score,user1,1},{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}}],[{file,"src/ratings_server.erl"},{line,34}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-11-13 01:41:16 =CRASH REPORT====
+  crasher:
+    initial call: ratings_server:init/1
+    pid: <0.82.0>
+    registered_name: []
+    exception exit: {{function_clause,[{ratings_server,handle_cast,[{add_score,user1,1},{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}}],[{file,"src/ratings_server.erl"},{line,34}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.80.0>]
+    messages: []
+    links: [<0.81.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 192
+  neighbours:
+2014-11-13 01:41:16 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{ratings_server,handle_cast,[{add_score,user1,1},{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}}],[{file,"src/ratings_server.erl"},{line,34}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.82.0>},{name,ratings_server},{mfargs,{ratings_server,start_link,[#{type => total}]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-13 01:41:50 =ERROR REPORT====
+** Generic server ratings_server terminating 
+** Last message in was {'$gen_cast',{add_score,user1,10}}
+** When Server state == {dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}}
+** Reason for termination == 
+** {{badrecord,dict},[{dict,get_slot,2,[{file,"dict.erl"},{line,389}]},{dict,find,2,[{file,"dict.erl"},{line,141}]},{ratings_server,handle_cast,2,[{file,"src/ratings_server.erl"},{line,35}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-11-13 01:41:50 =CRASH REPORT====
+  crasher:
+    initial call: ratings_server:init/1
+    pid: <0.82.0>
+    registered_name: []
+    exception exit: {{{badrecord,dict},[{dict,get_slot,2,[{file,"dict.erl"},{line,389}]},{dict,find,2,[{file,"dict.erl"},{line,141}]},{ratings_server,handle_cast,2,[{file,"src/ratings_server.erl"},{line,35}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.80.0>]
+    messages: []
+    links: [<0.81.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 156
+  neighbours:
+2014-11-13 01:41:50 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {{badrecord,dict},[{dict,get_slot,2,[{file,"dict.erl"},{line,389}]},{dict,find,2,[{file,"dict.erl"},{line,141}]},{ratings_server,handle_cast,2,[{file,"src/ratings_server.erl"},{line,35}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.82.0>},{name,ratings_server},{mfargs,{ratings_server,start_link,[#{type => total}]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-13 01:43:07 =ERROR REPORT====
+** Generic server ratings_server terminating 
+** Last message in was {get_users}
+** When Server state == {dict,2,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[[user1,10]],[[user2,20]],[],[],[],[],[],[],[],[],[],[],[],[],[]}}}
+** Reason for termination == 
+** {badarith,[{ratings_server,'-handle_call/3-fun-0-',2,[{file,"src/ratings_server.erl"},{line,28}]},{lists,sort,2,[{file,"lists.erl"},{line,967}]},{ratings_server,handle_call,3,[{file,"src/ratings_server.erl"},{line,28}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-11-13 01:43:07 =CRASH REPORT====
+  crasher:
+    initial call: ratings_server:init/1
+    pid: <0.82.0>
+    registered_name: []
+    exception exit: {{badarith,[{ratings_server,'-handle_call/3-fun-0-',2,[{file,"src/ratings_server.erl"},{line,28}]},{lists,sort,2,[{file,"lists.erl"},{line,967}]},{ratings_server,handle_call,3,[{file,"src/ratings_server.erl"},{line,28}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.80.0>]
+    messages: []
+    links: [<0.81.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 301
+  neighbours:
+2014-11-13 01:43:07 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {badarith,[{ratings_server,'-handle_call/3-fun-0-',2,[{file,"src/ratings_server.erl"},{line,28}]},{lists,sort,2,[{file,"lists.erl"},{line,967}]},{ratings_server,handle_call,3,[{file,"src/ratings_server.erl"},{line,28}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.82.0>},{name,ratings_server},{mfargs,{ratings_server,start_link,[#{type => total}]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-13 09:09:22 =ERROR REPORT====
+** Generic server ratings_server terminating 
+** Last message in was {get_users}
+** When Server state == {dict,2,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[[2|10]],[],[],[],[],[[1|20]],[],[],[],[]}}}
+** Reason for termination == 
+** {{case_clause,-10},[{lists,sort,2,[{file,"lists.erl"},{line,967}]},{ratings_server,handle_call,3,[{file,"src/ratings_server.erl"},{line,28}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-11-13 09:09:22 =CRASH REPORT====
+  crasher:
+    initial call: ratings_server:init/1
+    pid: <0.82.0>
+    registered_name: []
+    exception exit: {{{case_clause,-10},[{lists,sort,2,[{file,"lists.erl"},{line,967}]},{ratings_server,handle_call,3,[{file,"src/ratings_server.erl"},{line,28}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.80.0>]
+    messages: []
+    links: [<0.81.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 273
+  neighbours:
+2014-11-13 09:09:22 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {{case_clause,-10},[{lists,sort,2,[{file,"lists.erl"},{line,967}]},{ratings_server,handle_call,3,[{file,"src/ratings_server.erl"},{line,28}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.82.0>},{name,ratings_server},{mfargs,{ratings_server,start_link,[#{type => total}]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-13 13:59:09 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    start_error
+     Reason:     {already_started,<0.82.0>}
+     Offender:   [{pid,undefined},{name,weeklyratings_server},{mfargs,{ratings_server,start_link,[#{threshold => {ok,20},type => weekly}]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-13 13:59:37 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    start_error
+     Reason:     {already_started,<0.82.0>}
+     Offender:   [{pid,undefined},{name,weekly_ratings_server},{mfargs,{ratings_server,start_link,[#{threshold => {ok,20},type => weekly}]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-13 18:44:19 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    start_error
+     Reason:     {'EXIT',{undef,[{ratings_manager,start_link,[],[]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,314}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,297}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,263}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,306}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}}
+     Offender:   [{pid,undefined},{name,ratings_manager},{mfargs,{ratings_manager,start_link,[]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-13 18:45:29 =ERROR REPORT====
+** Generic server ratings_manager terminating 
+** Last message in was {register,{total,<0.83.0>}}
+** When Server state == #{ratings => {dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}}}
+** Reason for termination == 
+** {'function not exported',[{dict,store,[total,<0.83.0>],[]},{ratings_manager,handle_call,3,[{file,"src/ratings_manager.erl"},{line,23}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-11-13 18:47:18 =ERROR REPORT====
+** Generic server ratings_manager terminating 
+** Last message in was {get_rating,{daily}}
+** When Server state == #{ratings => {dict,3,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[weekly|<0.85.0>],[daily|<0.87.0>]],[],[],[[total|<0.83.0>]],[],[],[]}}}}
+** Reason for termination == 
+** {'function not exported',[{dict,find,[daily],[]},{ratings_manager,handle_call,3,[{file,"src/ratings_manager.erl"},{line,27}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-11-13 18:47:18 =CRASH REPORT====
+  crasher:
+    initial call: ratings_manager:init/1
+    pid: <0.82.0>
+    registered_name: []
+    exception exit: {{undef,[{dict,find,[daily],[]},{ratings_manager,handle_call,3,[{file,"src/ratings_manager.erl"},{line,27}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.80.0>]
+    messages: []
+    links: [<0.81.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 244
+  neighbours:
+2014-11-13 18:47:18 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {undef,[{dict,find,[daily],[]},{ratings_manager,handle_call,3,[{file,"src/ratings_manager.erl"},{line,27}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.82.0>},{name,ratings_manager},{mfargs,{ratings_manager,start_link,[]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-13 18:48:07 =ERROR REPORT====
+** Generic server ratings_manager terminating 
+** Last message in was {'$gen_cast',{set_user_score,{u1,10}}}
+** When Server state == #{ratings => {dict,3,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[weekly|<0.85.0>],[daily|<0.87.0>]],[],[],[[total|<0.83.0>]],[],[],[]}}}}
+** Reason for termination == 
+** {function_clause,[{ratings_manager,'-broadcast/2-lc$^0/1-0-',[{dict,3,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[weekly|<0.85.0>],[daily|<0.87.0>]],[],[],[[total|<0.83.0>]],[],[],[]}}}],[{file,"src/ratings_manager.erl"},{line,44}]},{ratings_manager,handle_cast,2,[{file,"src/ratings_manager.erl"},{line,35}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-11-13 18:48:07 =CRASH REPORT====
+  crasher:
+    initial call: ratings_manager:init/1
+    pid: <0.82.0>
+    registered_name: []
+    exception exit: {{function_clause,[{ratings_manager,'-broadcast/2-lc$^0/1-0-',[{dict,3,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[weekly|<0.85.0>],[daily|<0.87.0>]],[],[],[[total|<0.83.0>]],[],[],[]}}}],[{file,"src/ratings_manager.erl"},{line,44}]},{ratings_manager,handle_cast,2,[{file,"src/ratings_manager.erl"},{line,35}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.80.0>]
+    messages: []
+    links: [<0.81.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 215
+  neighbours:
+2014-11-13 18:48:07 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{ratings_manager,'-broadcast/2-lc$^0/1-0-',[{dict,3,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[weekly|<0.85.0>],[daily|<0.87.0>]],[],[],[[total|<0.83.0>]],[],[],[]}}}],[{file,"src/ratings_manager.erl"},{line,44}]},{ratings_manager,handle_cast,2,[{file,"src/ratings_manager.erl"},{line,35}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.82.0>},{name,ratings_manager},{mfargs,{ratings_manager,start_link,[]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-13 18:59:40 =ERROR REPORT====
+** Generic server ratings_manager terminating 
+** Last message in was {'$gen_cast',{set_user_score,{u1,10}}}
+** When Server state == #{ratings => {dict,3,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[weekly|<0.85.0>],[daily|<0.87.0>]],[],[],[[total|<0.83.0>]],[],[],[]}}}}
+** Reason for termination == 
+** {function_clause,[{ratings_manager,'-broadcast/2-lc$^0/1-0-',[{dict,3,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[weekly|<0.85.0>],[daily|<0.87.0>]],[],[],[[total|<0.83.0>]],[],[],[]}}}],[{file,"src/ratings_manager.erl"},{line,38}]},{ratings_manager,handle_cast,2,[{file,"src/ratings_manager.erl"},{line,29}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-11-13 18:59:40 =CRASH REPORT====
+  crasher:
+    initial call: ratings_manager:init/1
+    pid: <0.82.0>
+    registered_name: []
+    exception exit: {{function_clause,[{ratings_manager,'-broadcast/2-lc$^0/1-0-',[{dict,3,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[weekly|<0.85.0>],[daily|<0.87.0>]],[],[],[[total|<0.83.0>]],[],[],[]}}}],[{file,"src/ratings_manager.erl"},{line,38}]},{ratings_manager,handle_cast,2,[{file,"src/ratings_manager.erl"},{line,29}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.80.0>]
+    messages: []
+    links: [<0.81.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 215
+  neighbours:
+2014-11-13 18:59:40 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{ratings_manager,'-broadcast/2-lc$^0/1-0-',[{dict,3,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[weekly|<0.85.0>],[daily|<0.87.0>]],[],[],[[total|<0.83.0>]],[],[],[]}}}],[{file,"src/ratings_manager.erl"},{line,38}]},{ratings_manager,handle_cast,2,[{file,"src/ratings_manager.erl"},{line,29}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.82.0>},{name,ratings_manager},{mfargs,{ratings_manager,start_link,[]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-13 19:07:39 =ERROR REPORT====
+** Generic server ratings_manager terminating 
+** Last message in was {'$gen_cast',{set_user_score,{u1,10}}}
+** When Server state == #{ratings => {dict,3,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[weekly|<0.85.0>],[daily|<0.87.0>]],[],[],[[total|<0.83.0>]],[],[],[]}}}}
+** Reason for termination == 
+** {function_clause,[{ratings_manager,'-broadcast/2-lc$^0/1-0-',[{dict,3,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[weekly|<0.85.0>],[daily|<0.87.0>]],[],[],[[total|<0.83.0>]],[],[],[]}}}],[{file,"src/ratings_manager.erl"},{line,39}]},{ratings_manager,handle_cast,2,[{file,"src/ratings_manager.erl"},{line,29}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-11-13 19:07:39 =CRASH REPORT====
+  crasher:
+    initial call: ratings_manager:init/1
+    pid: <0.82.0>
+    registered_name: []
+    exception exit: {{function_clause,[{ratings_manager,'-broadcast/2-lc$^0/1-0-',[{dict,3,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[weekly|<0.85.0>],[daily|<0.87.0>]],[],[],[[total|<0.83.0>]],[],[],[]}}}],[{file,"src/ratings_manager.erl"},{line,39}]},{ratings_manager,handle_cast,2,[{file,"src/ratings_manager.erl"},{line,29}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.80.0>]
+    messages: []
+    links: [<0.81.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 215
+  neighbours:
+2014-11-13 19:07:39 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{ratings_manager,'-broadcast/2-lc$^0/1-0-',[{dict,3,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[weekly|<0.85.0>],[daily|<0.87.0>]],[],[],[[total|<0.83.0>]],[],[],[]}}}],[{file,"src/ratings_manager.erl"},{line,39}]},{ratings_manager,handle_cast,2,[{file,"src/ratings_manager.erl"},{line,29}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.82.0>},{name,ratings_manager},{mfargs,{ratings_manager,start_link,[]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-13 19:12:44 =ERROR REPORT====
+** Generic server ratings_manager terminating 
+** Last message in was {'$gen_cast',{set_user_score,{u1,10}}}
+** When Server state == #{ratings => {dict,3,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[weekly|<0.85.0>],[daily|<0.87.0>]],[],[],[[total|<0.83.0>]],[],[],[]}}}}
+** Reason for termination == 
+** {badarg,[{io,format,[<0.79.0>,"~w~n",[{set_user_score,{u1,10}},#{ratings => {dict,3,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[weekly|<0.85.0>],[daily|<0.87.0>]],[],[],[[total|<0.83.0>]],[],[],[]}}}}]],[]},{ratings_manager,handle_cast,2,[{file,"src/ratings_manager.erl"},{line,31}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-11-13 19:12:44 =CRASH REPORT====
+  crasher:
+    initial call: ratings_manager:init/1
+    pid: <0.82.0>
+    registered_name: []
+    exception exit: {{badarg,[{io,format,[<0.79.0>,"~w~n",[{set_user_score,{u1,10}},#{ratings => {dict,3,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[weekly|<0.85.0>],[daily|<0.87.0>]],[],[],[[total|<0.83.0>]],[],[],[]}}}}]],[]},{ratings_manager,handle_cast,2,[{file,"src/ratings_manager.erl"},{line,31}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.80.0>]
+    messages: []
+    links: [<0.81.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 229
+  neighbours:
+2014-11-13 19:12:44 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {badarg,[{io,format,[<0.79.0>,"~w~n",[{set_user_score,{u1,10}},#{ratings => {dict,3,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[weekly|<0.85.0>],[daily|<0.87.0>]],[],[],[[total|<0.83.0>]],[],[],[]}}}}]],[]},{ratings_manager,handle_cast,2,[{file,"src/ratings_manager.erl"},{line,31}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.82.0>},{name,ratings_manager},{mfargs,{ratings_manager,start_link,[]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-13 19:18:13 =ERROR REPORT====
+** Generic server ratings_manager terminating 
+** Last message in was {'$gen_cast',{set_user_score,{u1,10}}}
+** When Server state == #{ratings => {dict,3,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[weekly|<0.85.0>],[daily|<0.87.0>]],[],[],[[total|<0.83.0>]],[],[],[]}}}}
+** Reason for termination == 
+** {function_clause,[{ratings_manager,'-handle_cast/2-lc$^0/1-0-',[{dict,3,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[weekly|<0.85.0>],[daily|<0.87.0>]],[],[],[[total|<0.83.0>]],[],[],[]}}}],[{file,"src/ratings_manager.erl"},{line,31}]},{ratings_manager,handle_cast,2,[{file,"src/ratings_manager.erl"},{line,31}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-11-13 19:18:13 =CRASH REPORT====
+  crasher:
+    initial call: ratings_manager:init/1
+    pid: <0.82.0>
+    registered_name: []
+    exception exit: {{function_clause,[{ratings_manager,'-handle_cast/2-lc$^0/1-0-',[{dict,3,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[weekly|<0.85.0>],[daily|<0.87.0>]],[],[],[[total|<0.83.0>]],[],[],[]}}}],[{file,"src/ratings_manager.erl"},{line,31}]},{ratings_manager,handle_cast,2,[{file,"src/ratings_manager.erl"},{line,31}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.80.0>]
+    messages: []
+    links: [<0.81.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 214
+  neighbours:
+2014-11-13 19:18:13 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{ratings_manager,'-handle_cast/2-lc$^0/1-0-',[{dict,3,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[weekly|<0.85.0>],[daily|<0.87.0>]],[],[],[[total|<0.83.0>]],[],[],[]}}}],[{file,"src/ratings_manager.erl"},{line,31}]},{ratings_manager,handle_cast,2,[{file,"src/ratings_manager.erl"},{line,31}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.82.0>},{name,ratings_manager},{mfargs,{ratings_manager,start_link,[]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-13 19:21:01 =ERROR REPORT====
+** Generic server ratings_manager terminating 
+** Last message in was {'$gen_cast',{set_user_score,{u1,10}}}
+** When Server state == #{ratings => {dict,3,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[weekly|<0.85.0>],[daily|<0.87.0>]],[],[],[[total|<0.83.0>]],[],[],[]}}}}
+** Reason for termination == 
+** {'function not exported',[{gen_server,handle_cast,[<0.87.0>,{set_user_score,{u1,10}}],[]},{ratings_manager,'-broadcast/2-lc$^0/1-0-',2,[{file,"src/ratings_manager.erl"},{line,41}]},{ratings_manager,handle_cast,2,[{file,"src/ratings_manager.erl"},{line,31}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-11-13 19:21:01 =CRASH REPORT====
+  crasher:
+    initial call: ratings_manager:init/1
+    pid: <0.82.0>
+    registered_name: []
+    exception exit: {{undef,[{gen_server,handle_cast,[<0.87.0>,{set_user_score,{u1,10}}],[]},{ratings_manager,'-broadcast/2-lc$^0/1-0-',2,[{file,"src/ratings_manager.erl"},{line,41}]},{ratings_manager,handle_cast,2,[{file,"src/ratings_manager.erl"},{line,31}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.80.0>]
+    messages: []
+    links: [<0.81.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 296
+  neighbours:
+2014-11-13 19:21:01 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {undef,[{gen_server,handle_cast,[<0.87.0>,{set_user_score,{u1,10}}],[]},{ratings_manager,'-broadcast/2-lc$^0/1-0-',2,[{file,"src/ratings_manager.erl"},{line,41}]},{ratings_manager,handle_cast,2,[{file,"src/ratings_manager.erl"},{line,31}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,599}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.82.0>},{name,ratings_manager},{mfargs,{ratings_manager,start_link,[]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-11-13 19:21:55 =ERROR REPORT====
+** Generic server ratings_manager terminating 
+** Last message in was {get_rating,{daily}}
+** When Server state == #{ratings => {dict,3,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[weekly|<0.85.0>],[daily|<0.87.0>]],[],[],[[total|<0.83.0>]],[],[],[]}}}}
+** Reason for termination == 
+** {{function_clause,[{gen,call,[{ok,<0.87.0>},'$gen_call',{get_rating},5000],[{file,"gen.erl"},{line,149}]},{gen_server,call,2,[{file,"gen_server.erl"},{line,178}]},{ratings_manager,handle_call,3,[{file,"src/ratings_manager.erl"},{line,27}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},{gen_server,call,[{ok,<0.87.0>},{get_rating}]}}
+2014-11-13 19:21:55 =CRASH REPORT====
+  crasher:
+    initial call: ratings_manager:init/1
+    pid: <0.82.0>
+    registered_name: []
+    exception exit: {{{function_clause,[{gen,call,[{ok,<0.87.0>},'$gen_call',{get_rating},5000],[{file,"gen.erl"},{line,149}]},{gen_server,call,2,[{file,"gen_server.erl"},{line,178}]},{ratings_manager,handle_call,3,[{file,"src/ratings_manager.erl"},{line,27}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},{gen_server,call,[{ok,<0.87.0>},{get_rating}]}},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [ratings_sup,<0.80.0>]
+    messages: []
+    links: [<0.81.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 504
+  neighbours:
+2014-11-13 19:21:55 =SUPERVISOR REPORT====
+     Supervisor: {local,ratings_sup}
+     Context:    child_terminated
+     Reason:     {{function_clause,[{gen,call,[{ok,<0.87.0>},'$gen_call',{get_rating},5000],[{file,"gen.erl"},{line,149}]},{gen_server,call,2,[{file,"gen_server.erl"},{line,178}]},{ratings_manager,handle_call,3,[{file,"src/ratings_manager.erl"},{line,27}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},{gen_server,call,[{ok,<0.87.0>},{get_rating}]}}
+     Offender:   [{pid,<0.82.0>},{name,ratings_manager},{mfargs,{ratings_manager,start_link,[]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+

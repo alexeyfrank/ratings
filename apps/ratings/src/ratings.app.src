@@ -1,0 +1,15 @@
+{application, ratings,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, [ratings_sup]},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  lager,
+                  cowboy,
+                  gproc
+                 ]},
+  {mod, { ratings_app, []}},
+  {env, []}
+ ]}.
