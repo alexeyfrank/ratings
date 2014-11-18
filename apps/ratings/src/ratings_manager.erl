@@ -6,11 +6,7 @@
 -define(RATING_STAT_SERVER_NAME(Name), { rating_stat_server, Name }).
 
 -export([set_user_score/2, get_rating/1, get_stat/1 ]).
-
 -export([ reg_rating_server/1, reg_rating_stat_server/1 ]).
-
-% -export([get_rating_servers/0, get_rating_server/1, reg_rating_server/1]).
-% -export([get_rating_stat_servers/0, get_rating_stat_server/1, reg_rating_stat_server/1]).
 
 % vvvv API vvvv
 get_rating(Name) ->
@@ -25,29 +21,6 @@ reg_rating_server(Name) ->
 reg_rating_stat_server(Name) ->
     ?REG_PID(?RATING_STAT_SERVER_NAME(Name)),
     ?SUBSCRIBE(?RATING_SERVERS).
-
-
-% get_rating_servers() -> select_pids(gproc:select(get_rating_server_filter())).
-% get_rating_server(Type) -> gproc:lookup_local_name(?RATING_SERVER_NAME(Type)).
-% reg_rating_server(Type) -> gproc:add_local_name(?RATING_SERVER_NAME(Type)).
-
-% get_rating_stat_servers() -> select_pids(gproc:select(get_rating_stat_server_filter())).
-% get_rating_stat_server(Type) -> gproc:lookup_local_name(?RATING_STAT_SERVER_NAME(Type)).
-% reg_rating_stat_server(Type) -> gproc:add_local_name(?RATING_STAT_SERVER_NAME(Type)).
-
-% %%% Private
-% get_rating_server_filter() ->
-%     GProcKey = {'_', '_', {rating_server, '_'}},
-%     MatchHead = {GProcKey, '_', '_'},
-%     [{MatchHead, [], ['$$']}].
-
-% get_rating_stat_server_filter() ->
-%     GProcKey = {'_', '_', {rating_stat_server, '_'}},
-%     MatchHead = {GProcKey, '_', '_'},
-%     [{MatchHead, [], ['$$']}].
-
-% select_pids(GProcResult) ->
-%     lists:map(fun([_, Pid, _]) -> Pid end, GProcResult).
 
 call(Pids, Msg) when is_list(Pids) -> lists:map(fun(Pid) -> call(Pid, Msg) end, Pids);
 call(Pid, Msg) when is_pid(Pid) -> gen_server:call(Pid, Msg).

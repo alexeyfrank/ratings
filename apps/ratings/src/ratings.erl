@@ -1,6 +1,6 @@
 -module(ratings).
 
--export([start/0, stop/0, restart/0]).
+-export([start/0, stop/0]).
 
 applications() ->
     [gproc, mavg, crypto, ranch, cowlib, cowboy, ratings].
@@ -12,7 +12,3 @@ start() ->
 
 stop() ->
     [ok = application:stop(App) || App <- applications()].
-
-restart() ->
-    stop(),
-    start().
