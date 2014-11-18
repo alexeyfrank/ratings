@@ -22,16 +22,14 @@ content_types_provided(Req, Context) ->
 
 display(Req0, Context) ->
     Type = binary_to_atom(cowboy_req:binding(type, Req0), utf8),
-    Rating = ratings:get_rating(Type),
+    Rating = ratings_manager:get_rating(Type),
     {to_json(Rating), Req0, Context}.
 
 
 to_json(Rating) ->
     RatingHash = lists:map(fun({User, Score}) ->
-                            {[
-                                {user_id, User},
-                                {score, Score}
-                             ]}
+                            {[{user_id, User},
+                              {score, Score}]}
                            end, Rating),
     jiffy:encode(RatingHash).
 

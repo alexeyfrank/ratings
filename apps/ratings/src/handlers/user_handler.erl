@@ -28,6 +28,5 @@ add_user_score(Req0, Context) ->
     UserId = cowboy_req:binding(user_id, Req0),
     Score = binary_to_integer(cowboy_req:binding(score, Req0)),
 
-    lager:debug("~p ~p", [UserId, Score]),
-    ratings:set_user_score(UserId, Score),
+    ratings_manager:set_user_score(UserId, Score),
     {true, Req0, Context}.

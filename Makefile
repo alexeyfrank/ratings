@@ -41,6 +41,6 @@ add_user_score2:
 get_rating_weekly:
 	curl -X GET -H "Content-Type: application/json" http://127.0.0.1:8008/api/ratings/weekly
 
-get_user1_stat_weekly:
-	curl -X GET -H "Content-Type: application/json" http://127.0.0.1:8008/api/ratings_stat/user1/weekly
+get_stat_weekly:
+	curl -X GET -H "Content-Type: application/json" http://127.0.0.1:8008/api/stat/weekly
 .PHONY: rel

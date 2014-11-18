@@ -14,7 +14,7 @@ start(_StartType, _StartArgs) ->
         {'_', [
             {"/api/users/:user_id/:score", user_handler, []},
             {"/api/ratings/:type", rating_handler, []},
-            {"/api/ratings_stat/:user_id/:type", rating_stat_handler, []}
+            {"/api/stat/:type", rating_stat_handler, []}
         ]}
     ]),
     {ok, Port } = application:get_env(port),

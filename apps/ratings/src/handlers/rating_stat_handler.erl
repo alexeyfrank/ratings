@@ -21,16 +21,20 @@ content_types_provided(Req, Context) ->
 
 display(Req0, Context) ->
     Type = binary_to_atom(cowboy_req:binding(type, Req0), utf8),
-    UserId = cowboy_req:binding(user_id, Req0),
-    Stat = ratings:get_user_stat(UserId, Type),
-    {to_json(Stat), Req0, Context}.
+    Stat = ratings_manager:get_stat(Type),
+    {stat_to_json(Stat), Req0, Context}.
 
-to_json(Stat) ->
-    StatHash = lists:map(fun({Score, Time}) ->
-                            {[
-                                {score, Score},
-                                {time, Time}
-                             ]}
-                           end, Stat),
+stat_to_json(Stat) ->
+    StatHash = lists:map(fun({User, Events}) ->
+                                 {[{user, User},
+                                   {events, events_to_json(Events)}]}
+                         end, Stat),
     jiffy:encode(StatHash).
+
+events_to_json(Events) ->
+    lists:map(fun({Score, Time}) ->
+                      {[{score, Score},
+                        {time, Time}]}
+              end, Events).
+
 
