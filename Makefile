@@ -31,6 +31,9 @@ run: compileapp
 repl: compileapp
 	@(erl -config $(CURDIR)/sys -pa $(CURDIR)/apps/*/ebin $(CURDIR)/deps/*/ebin -boot start_sasl)
 
+test: compileapp
+	ERL_FLAGS="-config $(CURDIR)/sys" $(REBAR) eu skip_deps=true
+
 add_user_score:
 	curl -X PUT -H "Content-Type: application/json" http://127.0.0.1:8008/api/users/user1/100
 add_user_score2:

@@ -6,6 +6,7 @@
 %%%% Api
 set_user_score(UserId, Score) -> ratings_manager:set_user_score(UserId, Score).
 get_rating(Type) -> ratings_manager:get_rating(Type).
+get_top_rating(Type) -> ratings_manager:get_rating(Type).
 get_user_stat(UserId, Type) -> ratings_manager:get_user_stat(UserId, Type).
 
 

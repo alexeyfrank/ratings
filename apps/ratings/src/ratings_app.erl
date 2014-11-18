@@ -17,7 +17,7 @@ start(_StartType, _StartArgs) ->
             {"/api/ratings_stat/:user_id/:type", rating_stat_handler, []}
         ]}
     ]),
-    Port = 8008,
+    {ok, Port } = application:get_env(port),
     {ok, _} = cowboy:start_http(http_listener, 5,
         [{port, Port}],
         [{env, [{dispatch, Dispatch}]}]
