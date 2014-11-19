@@ -6,13 +6,16 @@
 -define(RATING_STAT_SERVER_NAME(Name), { rating_stat_server, Name }).
 
 -export([set_user_score/2, get_rating/1, get_stat/1 ]).
--export([ reg_rating_server/1, reg_rating_stat_server/1 ]).
+-export([ reg_rating_server/1, reg_rating_stat_server/1, flush/1 ]).
 
 % vvvv API vvvv
 get_rating(Name) ->
     call(?GET_PID(?RATING_SERVER_NAME(Name)), { get_rating }).
 set_user_score(User, Score) ->
     ?PUBLISH(?RATING_SERVERS, { set_user_score, { User, Score }}).
+flush(Name) ->
+    cast(?GET_PID(?RATING_SERVER_NAME(Name)), { flush }),
+    cast(?GET_PID(?RATING_STAT_SERVER_NAME(Name)), { flush }).
 get_stat(Name) ->
     call(?GET_PID(?RATING_STAT_SERVER_NAME(Name)), { get_stat }).
 reg_rating_server(Name) ->

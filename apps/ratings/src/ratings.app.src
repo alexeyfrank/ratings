@@ -8,7 +8,8 @@
                   stdlib,
                   lager,
                   cowboy,
-                  gproc
+                  gproc,
+                  erlcron
                  ]},
   {mod, { ratings_app, []}},
   {env, []}

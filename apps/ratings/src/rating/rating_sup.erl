@@ -21,7 +21,6 @@ start_link(Name, RestartSpec, Threshold) ->
 %%% Supervisor callbacks
 %%%===================================================================
 init(Args) ->
-    {ok, {{one_for_one, 5, 10}, [
-                                 ?CHILD(rating_server, rating_server, worker, Args),
-                                 ?CHILD(rating_stat_server, rating_stat_server, worker, Args)
-                                ]}}.
+    {ok, {{one_for_one, 5, 10}, [?CHILD(rating_server, rating_server, worker, Args),
+                                 ?CHILD(rating_stat_server, rating_stat_server, worker, Args),
+                                 ?CHILD(rating_timer, rating_timer, worker, Args)]}}.

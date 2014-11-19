@@ -40,6 +40,9 @@ add_user_score2:
 	curl -X PUT -H "Content-Type: application/json" http://127.0.0.1:8008/api/users/user2/20
 get_rating_weekly:
 	curl -X GET -H "Content-Type: application/json" http://127.0.0.1:8008/api/ratings/weekly
+get_rating_secondly:
+	curl -X GET -H "Content-Type: application/json" http://127.0.0.1:8008/api/ratings/secondly
+	curl -X GET -H "Content-Type: application/json" http://127.0.0.1:8008/api/stat/secondly
 
 get_stat_weekly:
 	curl -X GET -H "Content-Type: application/json" http://127.0.0.1:8008/api/stat/weekly

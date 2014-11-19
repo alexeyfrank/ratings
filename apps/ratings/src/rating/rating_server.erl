@@ -24,6 +24,8 @@ handle_call({ get_rating }, _From, State) ->
 handle_call(_Message, _From, State) ->
     { reply, invalid_command, State }.
 
+handle_cast({ flush }, State) ->
+    { noreply, flush_state(State) };
 handle_cast(_Msg, State) ->
     { noreply, State }.
 
@@ -37,6 +39,9 @@ terminate(_Reason, _State) -> ok.
 code_change(_OldVersion, State, _Extra) -> { ok, State }.
 
 %%% Private
+flush_state(OldState) ->
+    OldState#{ users => dict:new() }.
+
 get_user_score(UserId, #{users := Users}) ->
     case dict:find(UserId, Users) of
         error -> undefined;

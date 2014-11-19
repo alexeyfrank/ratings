@@ -3,7 +3,7 @@
 -export([start/0, stop/0]).
 
 applications() ->
-    [gproc, mavg, crypto, ranch, cowlib, cowboy, ratings].
+    [gproc, mavg, crypto, ranch, cowlib, cowboy, erlcron, ratings].
 
 start() ->
     ok = lager:start(),
