@@ -1,5 +1,4 @@
 -module(rating_server).
-
 -behaviour(gen_server).
 
 -export([start_link/3]).

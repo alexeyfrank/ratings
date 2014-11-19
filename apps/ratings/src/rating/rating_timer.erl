@@ -30,10 +30,12 @@ terminate(_Reason, _State) ->
 code_change(_OldVsn, State, _Extra) ->
     {ok, State}.
 
-
 %%% Private
 start_job(Name, RestartSpec) ->
-    erlcron:cron({ RestartSpec, fun(_, _) -> ratings_manager:flush(Name) end }).
+    erlcron:cron({ RestartSpec, fun(_, _) ->
+                                        lager:debug("Flush rating_server state: ~w~n", [Name]),
+                                        ratings_manager:flush(Name)
+                                end }).
 
 stop_job(Ref) ->
     erlcron:cancel(Ref).
